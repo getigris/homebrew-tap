@@ -1,23 +1,23 @@
 class IgrisMemory < Formula
   desc "Persistent memory server for AI coding agents (MCP protocol)"
   homepage "https://github.com/getigris/igris-memory"
-  version "0.1.2"
+  version "0.2.0"
   license "Elastic-2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/getigris/igris-memory/releases/download/v0.1.2/igris-memory-aarch64-apple-darwin.tar.gz"
-      sha256 "8d4a78a6bbddec46f31f19654b7287f464bbae6237648c433f10619d02913b79"
+      url "https://github.com/getigris/igris-memory/releases/download/v0.2.0/igris-memory-aarch64-apple-darwin.tar.gz"
+      sha256 "cdbbb8a1a2d4332979e890016ad2a6c15b0202ad692ab096718d6a109ba14e77"
     end
   end
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/getigris/igris-memory/releases/download/v0.1.2/igris-memory-x86_64-unknown-linux-gnu.tar.gz"
-      sha256 "aea19c894060b5526706acc3fa87e3439672a727edc0686882df57be993b1a08"
+      url "https://github.com/getigris/igris-memory/releases/download/v0.2.0/igris-memory-x86_64-unknown-linux-gnu.tar.gz"
+      sha256 "b6d16c42a7c330131d38c70b3347466e251d0200400ab00b84999c61ea5ea643"
     elsif Hardware::CPU.arm?
-      url "https://github.com/getigris/igris-memory/releases/download/v0.1.2/igris-memory-aarch64-unknown-linux-gnu.tar.gz"
-      sha256 "e649f6e5187ee4f51cb5b765aa63ea976197b184b30f579ffd0ac7c9d1c4d999"
+      url "https://github.com/getigris/igris-memory/releases/download/v0.2.0/igris-memory-aarch64-unknown-linux-gnu.tar.gz"
+      sha256 "75c79c66f0c0200b5bb46f62bdf3b612c04ea097e9028c71d72f76ffc3c69f7c"
     end
   end
 
